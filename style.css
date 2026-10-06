@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+header {
+    background-color: #0f172a;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #38bdf8;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    color: #ffffff;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    color: #38bdf8;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #cbd5e1;
+}
+
+.btn {
+    padding: 10px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.primary-btn {
+    background-color: #0284c7;
+    color: white;
+}
+
+.secondary-btn {
+    border: 1px solid #38bdf8;
+    color: #38bdf8;
+}
+
+/* Sections */
+.section {
+    padding: 60px 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    color: #0f172a;
+    border-bottom: 3px solid #0284c7;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.skill-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #0284c7;
+}
+
+/* Experience */
+.timeline-item {
+    background: white;
+    padding: 20px;
+    border-left: 4px solid #0284c7;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.timeline-date {
+    font-size: 0.85rem;
+    color: #64748b;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-tag {
+    font-size: 0.75rem;
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #0f172a;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 15px;
+}
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 20px;
+}
+
+.tech-stack span {
+    background: #f1f5f9;
+    color: #475569;
+    font-size: 0.75rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.repo-link {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.repo-link:hover {
+    text-decoration: underline;
+}
+
+/* Contact & Footer */
+.contact-box p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.contact-box a {
+    color: #0284c7;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #0f172a;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
